@@ -4,6 +4,7 @@ import User from './Item'
 
 class userList extends React.Component {
   render() {
+    // console.log(this.props);
       return(
         <React.Fragment>
         <h4>User list</h4>
@@ -16,6 +17,7 @@ class userList extends React.Component {
 }
 //mapStateToProps
 const sendDataAsProps = (state) => {
+  //console.log(state);
   return {state: state, users: state.users.users}
 }
 export default connect(sendDataAsProps) (userList);

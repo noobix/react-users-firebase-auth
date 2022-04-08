@@ -5,7 +5,7 @@ import firebase from '../firebase/config';
 class Item extends React.Component{
     constructor(props){
         super(props);
-        console.log(this.props)
+        //console.log(this.props)
         this.state = {id: this.props.user.id, name: this.props.user.name, 
             email: this.props.user.email, gen: this.props.user.gen, isShowing: false}
     }
@@ -31,7 +31,7 @@ class Item extends React.Component{
     }
     render(){
         const {name, email, gen} = this.props.user
-        console.log(this.props.user)
+        //console.log(this.props.user)
         return(
             <div>
                 <p>{name}</p>
