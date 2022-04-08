@@ -17,7 +17,7 @@ class home extends React.Component {
         return(<React.Fragment>
             <div>
                 <Button variant='success'><Link to="/SignIn">Sign In</Link></Button>
-                <Button variant='primary'><Link to="/Register">Register</Link></Button>
+                <Button variant='warning'><Link to="/Register">Register</Link></Button>
                 <Button variant='secondary' onClick={this.signOut}>Sign Out</Button>
             </div>
             <Users />
